@@ -13,7 +13,6 @@ fn is_sorted<T: Ord>(arr: &[T]) -> bool {
 
 fn main() {
     let mut arr = [5, 3, 8, 1, 2, 7, 4, 6, 9, 10];
-    arr.shuffle(&mut rand::thread_rng());
 
     let start = Instant::now();
     bogo_sort(&mut arr);
